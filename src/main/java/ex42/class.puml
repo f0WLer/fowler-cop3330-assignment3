@@ -1,0 +1,18 @@
+@startuml
+
+class App {
+    +{static} main(args: String[]): void
+    +{static} readEmployeeData(fileName: String): ArrayList<String>
+    +{static} processEmployeeData(data: ArrayList<String>): ArrayList<Employee>
+    +{static} createEmployeeTable(employees: ArrayList<Employee>): String
+}
+
+class Employee {
+    +first: String
+    +last: String
+    +salary: int
+
+    +Employee(first: String, last: String, salary: int)
+}
+
+@enduml

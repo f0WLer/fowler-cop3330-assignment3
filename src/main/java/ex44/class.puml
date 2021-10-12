@@ -1,0 +1,17 @@
+@startuml
+
+class Product{
+    +name: String
+    +price: float
+    +quantity: int
+
+    +Product(name: String, price: float, quantity: int)
+}
+
+class App{
+    +main(args: String[])
+    +getProductInfo(inventory: ArrayList<Product>): void
+    +getInventoryFromJson(path: String): ArrayList<Product>
+}
+
+@enduml

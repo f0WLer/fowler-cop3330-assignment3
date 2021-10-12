@@ -1,0 +1,16 @@
+@startuml
+
+class WebGen {
+    -name: String
+    -author: String
+    -hasJS: boolean
+    -hasCSS: boolean
+    -path: String
+
+    +WebGen(name: String, author: String, hasJS: boolean, hasCSS: boolean)
+    -newFolder(name: String): void
+    -generateHTML(): void
+    -generateFiles(): void
+}
+
+@enduml

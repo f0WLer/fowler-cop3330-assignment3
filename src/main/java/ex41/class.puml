@@ -1,0 +1,17 @@
+@startuml
+
+class App {
+    +{static} main(args: String[]) : void
+    -{static} readNames(fileName: String) : ArrayList<Name>
+    -{static} sortNames(names: ArrayList<Name>) : void
+    -{static} writeNames(names: ArrayList<Name>, fileName: String) : void
+}
+
+class Name {
+    +first: String
+    +last: String
+
+    +Name(first: String, last: String)
+}
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+
+class App {
+    +main(args String[]): void
+    +writeToFile(content String): void
+}
+
+@enduml

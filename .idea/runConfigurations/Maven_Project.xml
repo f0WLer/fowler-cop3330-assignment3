@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Maven Project" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ex41.App" />
+    <module name="fowler-cop3330-assignment3" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
