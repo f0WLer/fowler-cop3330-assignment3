@@ -27,7 +27,7 @@ public class App {
         // Read input file
         String content;
         try {
-            content = Files.readString(Paths.get(System.getProperty("user.dir") + "/exercise45_input.txt"), StandardCharsets.US_ASCII);
+            content = Files.readString(Paths.get(System.getProperty("user.dir") + "/exercise46_input.txt"), StandardCharsets.US_ASCII);
         } catch (IOException e) {
             e.printStackTrace();
             return;
@@ -36,9 +36,9 @@ public class App {
         // Count the frequencies of each word.
         for (int i = 0; i < keywords.size(); i++) {
             content = content.replaceAll("\n", " ");
-            String[] subString = content.split(" ");
-            for (String s: subString) {
-                if (s.equals(keywords.get(i))) {
+            String[] subStrings = content.split(" ");
+            for (String s: subStrings) {
+                if (s.equalsIgnoreCase(keywords.get(i))) {
                     int oldFreq = freq.get(i);
                     freq.set(i, oldFreq++);
                 }
